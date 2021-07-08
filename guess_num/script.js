@@ -1,25 +1,40 @@
 var y = Math.floor(Math.random() * 10 + 1);
+console.log(y)
 
-// counting the number of guesses
-// made for correct Guess
 var guess = 1;
 
 document.getElementById("submitguess").onclick = function () {
 
-    // number guessed by user     
     var x = document.getElementById("guessField").value;
 
     if (x == y) {
-        alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN " +
-            guess + " GUESS ");
-    } else if (x > y)
-    /* if guessed number is greater
-                      than actual number*/
-    {
+
+        if (guess > 3) {
+            alert("You Lose")
+        } else {
+            alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN " +
+                guess + " YOU WIN ");
+
+
+        }
+
+    } else if (x > y) {
+
+        if (guess > 3) {
+            alert("You Lose")
+        } else {
+            alert("OOPS SORRY!! TRY A SMALLER NUMBER" + "YOU LEFT: " +
+                (3 - guess))
+
+        }
         guess++;
-        alert("OOPS SORRY!! TRY A SMALLER NUMBER");
     } else {
+        if (guess > 3) {
+            alert("You Lose")
+        } else {
+            alert("OOPS SORRY!! TRY A GREATER NUMBER " + "YOU LEFT: " + (3 - guess));
+        }
         guess++;
-        alert("OOPS SORRY!! TRY A GREATER NUMBER")
     }
+
 }
