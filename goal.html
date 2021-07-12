@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Goal</title>
+    <style>
+        .field {
+            width: 100%;
+            height: 550px;
+            border: 1px solid aqua;
+        }
+
+        .goal-post {
+            position: relative;
+            margin-left: 750px;
+            transform: skewY(-deg);
+
+            display: flex;
+            width: 250px;
+            height: 150px;
+        }
+
+        .goal-post .goal-keeper {
+            width: 150px;
+            height: 100px;
+            padding-top: 75px;
+            transform: scaleY(1.2);
+            transition: transform 6s;
+        }
+
+        .player {
+            position: relative;
+            
+            transition: transform 0.4s;
+
+        }
+
+        .blocking {
+            position: relative;
+            margin-left: 600px;
+            transform: skewY(15deg);
+            margin-bottom: 30px;
+            transition: transform 6s;
+
+
+        }
+
+        .field:hover>.ball-player>.player {
+            transform: rotate(-45deg);
+        }
+
+        .field:hover>.blocking {
+            transform: scaleY(1.2);
+        }
+
+        .field:hover>.goal-post>.goal-keeper {
+            transform: scaleX(2);
+        }
+
+        .field:hover>.goal-post>.post {
+            transform: scaleX(1);
+        }
+
+        .ball-player {
+            display: flex;
+            position: absolute;
+
+            width: 650px;
+
+        }
+
+
+        .ball {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-top: 110px;
+            margin-left: 230px;
+            background-color: red;
+            transition: transform 5s ease-out 0.3s;
+
+        }
+
+        .field:hover>.ball {
+            transform: translate3d(750px, -400px, -100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <div class="goal-post">
+            <img src="img/goal-keeper-removebg-preview.png" alt="Goal-keeper" class="goal-keeper">
+            <img src="img/goal-post.png" alt="goal-post" class="post">
+
+        </div>
+
+
+        <img src="img/free-kick-removebg-preview.png" alt="Free-Kick Blocking" class="blocking">
+        <div class="ball-player">
+            <img src="img/messi-shot-removebg-preview (1).png" alt="messi shot" class="player">
+
+        </div>
+        <div class="ball">
+
+        </div>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
