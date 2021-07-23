@@ -267,7 +267,7 @@ li a {
 
 .item-section {
 
-    
+
 
     z-index: -1;
 
@@ -322,4 +322,24 @@ li a {
 
 .fa-chevron-right {
     padding-left: 25px;
+}
+
+/*-------------------
+ footer section 
+ ------------------*/
+footer {
+    margin-top: 131px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.google-address {
+    width: 646px;
+    height: 351px;
+    margin-right: 131px;
+}
+
+.google-address img {
+    width: 100%;
 }
