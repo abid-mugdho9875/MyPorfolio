@@ -343,3 +343,55 @@ footer {
 .google-address img {
     width: 100%;
 }
+
+/*------------------
+ media query
+ ------------------- */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .navigation-bar {
+        display: none;
+    }
+
+    .home-page {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 70%;
+    }
+
+    .promotion {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .title-promotion {
+        width: 150px;
+    }
+
+    .items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left-arrow {
+        display: none;
+    }
+
+    .right-arrow {
+        display: none;
+    }
+}
