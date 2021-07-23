@@ -8,6 +8,8 @@
 body {
     margin: 0;
     padding: 0;
+    width: 1400px;
+    height: auto;
     /* first-font-family-list */
     font-family: 'Alegreya Sans', sans-serif;
     /* second font family list */
@@ -19,16 +21,105 @@ body {
 /*---------------
  header-section style 
  -----------------*/
-.homepage-left {}
+.home-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+
+
+}
 
 .homepage-left .slogan {
+    width: 414px;
+    height: 53px;
+    margin-top: 235px;
+    margin-left: 120px;
+    margin-right: 145px;
+    font-size: 28px;
 
     font-family: 'Alegreya Sans', sans-serif;
     font-family: 'Cedarville Cursive', cursive;
 }
 
 .homepage-left .tittle {
+    margin-left: 117px;
+    margin-top: 26px;
+    font-size: 63px;
+    margin-bottom: 26px;
+    color: wheat;
+    font-weight: bold;
     font-family: 'Alegreya Sans', sans-serif;
     font-family: 'Cedarville Cursive', cursive;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+.homepage-left button {
+    width: 235px;
+    height: 54px;
+    background: green;
+    margin-top: 26px;
+    margin-left: 120px;
+}
+
+.homepage-right {
+    display: flex;
+}
+
+.homepage-right .arrow-indicate {
+    width: 159px;
+    height: 157px;
+    background: #E3EBE7;
+    opacity: 0.4;
+
+    margin-top: 438px;
+}
+
+.homepage-right .arrow-indicate .fas {
+    width: 25px;
+    height: 6px;
+    text-align: center;
+    padding-top: 78px;
+    padding-left: 67px;
+    color: black;
+}
+
+
+.homepage-right .bacground {
+    background: #E3EBE7;
+
+    width: 410px;
+    height: 466px;
+    margin-top: 129px;
+    margin-left: 0;
+    margin-right: 0px;
+
+}
+
+.homepage-right .bacground img {
+    padding-top: 140px;
+    padding-left: 39px;
+    padding-right: 27px;
+}
+
+.homepage-right .follow-apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.homepage-right .follow-apps .social-icone {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.homepage-right .follow-apps .follow-link {
+    transform: rotate(-90deg);
+
+    margin: 0;
+    padding: 0;
+
 }
