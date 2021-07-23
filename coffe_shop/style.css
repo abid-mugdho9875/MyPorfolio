@@ -236,3 +236,32 @@ li a {
     padding-right: 13px;
     z-index: -;
 }
+
+/*--------------
+ promotion section style 
+ ---------------*/
+.promotion {
+    margin-top: 110px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.promotion-img {
+    width: 410px;
+    height: 276px;
+    background: #E3EBE7;
+    margin-left: 105px;
+}
+
+.promotion-img img {
+    width: 120%;
+
+}
+
+button {
+    width: 235px;
+    height: 54px;
+    background: #2D635E;
+    margin-top: 26px;
+    margin-left: 120px;
+}
