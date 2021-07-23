@@ -1,0 +1,34 @@
+/*------------
+ import necessary font
+ ------------- */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Cedarville+Cursive&family=Josefin+Sans:wght@700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    /* first-font-family-list */
+    font-family: 'Alegreya Sans', sans-serif;
+    /* second font family list */
+
+    /* third font family list */
+
+}
+
+/*---------------
+ header-section style 
+ -----------------*/
+.homepage-left {}
+
+.homepage-left .slogan {
+
+    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.homepage-left .tittle {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+}
