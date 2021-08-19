@@ -1,10 +1,15 @@
 //deposited value
 document.getElementById("deposit-btn").addEventListener('click', function () {
     //collect deposit ammount value
-    depositAmmount = document.getElementById('deposit-total').value;
+    newdepositAmmount = document.getElementById('deposit-total').value;
     //change deposit display value
     depositDisplay = document.getElementById('deposit-ammount');
+    depositAmmount = parseFloat(newdepositAmmount) + parseFloat(depositDisplay.innerText);
     depositDisplay.innerText = depositAmmount;
+    //account balamnce update 
+    balanceDisplay = document.getElementById('balance-total').innerText;
+    balanceAmmount = parseFloat(balanceDisplay) + parseFloat(depositDisplay.innerText)
+    balanceDisplay = balanceAmmount;
     //input form will become zero
     document.getElementById('deposit-total').value = '';
 
@@ -14,10 +19,11 @@ document.getElementById("deposit-btn").addEventListener('click', function () {
 //withdraw ammount
 document.getElementById("withdraw-btn").addEventListener('click', function () {
     //collect withdraw ammount value
-    withdrawAmmount = document.getElementById('withdraw-total').value;
+    newwithdrawAmmount = document.getElementById('withdraw-total').value;
     //change withdraw display value
     withdrawDisplay = document.getElementById('withdraw-ammount');
-    withdrawDisplay.innerText = withdrawAmmount;
+    totalWithdrawAmmount = parseFloat(withdrawDisplay.innerText) + parseFloat(newwithdrawAmmount)
+    withdrawDisplay.innerText = totalWithdrawAmmount;
     //input form will become zero
     document.getElementById('withdraw-total').value = '';
 
